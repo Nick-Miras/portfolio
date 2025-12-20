@@ -1,0 +1,216 @@
+/* .vitepress/theme/custom.css */
+
+/* Target the Hero Container */
+.VPHero .container {
+  /* Force column layout on all screen sizes */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* Adjust the Main Text Section */
+.VPHero .main {
+  /* Ensure the text container takes full width to center properly */
+  width: 100% !important;
+  max-width: 800px; /* Optional: Constrain width for readability */
+  margin: 0 auto;
+  order: 1; /* Keep text on top */
+}
+
+/* Fix text alignment for specific elements inside main */
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline,
+.VPHero .actions {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* replacing the theme switcher */
+
+/* ==============================================
+   1. GLOBAL ARCHITECTURE (Applies to Both Modes)
+   ============================================== */
+:root {
+  /* --- Shapes: Sharp "CAD" Edges --- */
+  --vp-button-alt-border-radius: 0px;
+  --vp-button-brand-border-radius: 0px;
+  --vp-code-block-bg: #f1f3f5; /* Let the grid show through slightly */
+}
+
+/* Force sharp corners on high-level UI elements */
+.VPButton, .VPImage, .box, .custom-block, .VPFeature, .VPNavBarTitle {
+  border-radius: 0px !important;
+}
+
+/* Make headers look like technical labels */
+h1, h2, h3, h4 {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* ==============================================
+   2. LIGHT MODE: "Engineering Graph Paper"
+   ============================================== */
+:root {
+  /* --- Palette: Blue Ink on White Paper --- */
+  --vp-c-bg: #f8f9fa;             /* Crisp Paper White */
+  --vp-c-bg-alt: #e9ecef;         /* Sidebar Grey */
+  --vp-c-bg-soft: #e2e6ea;        /* Soft Block Background */
+
+  --vp-c-brand: #0052cc;          /* Technical Pen Blue */
+  --vp-c-brand-light: #2684ff;    /* Highlight Blue */
+  --vp-c-brand-dark: #003366;     /* Deep Navy */
+
+  --vp-c-text-1: #0b1a2f;         /* Ink Black/Navy */
+  --vp-c-text-2: #405060;         /* Pencil Grey */
+  --vp-c-text-3: #8090a0;         /* Faint Pencil */
+
+  --vp-c-border: #d0d7de;         /* Grid Line Grey */
+  --vp-c-divider: #d0d7de;
+
+  /* --- UI Specifics --- */
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: var(--vp-c-brand);
+}
+
+/* Light Mode Grid Background */
+body {
+  background-color: var(--vp-c-bg);
+  /* Blueish grid lines on white paper */
+  background-image: 
+    linear-gradient(rgba(0, 82, 204, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 82, 204, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* ==============================================
+   3. DARK MODE: "Cyanotype Blueprint"
+   ============================================== */
+.dark {
+  /* --- Palette: White Lines on Blue Paper --- */
+  --vp-c-bg: #0b1a2f;            /* Deep Technical Blue */
+  --vp-c-bg-alt: #081221;        /* Darker Sidebar */
+  --vp-c-bg-soft: #112240;       /* Card/Block backgrounds */
+  
+  --vp-c-brand: #64ffda;         /* Cyan Accent */
+  --vp-c-brand-light: #9affed;
+  --vp-c-brand-dark: #3bd1b0;
+  
+  --vp-c-text-1: #e6f1ff;        /* High brightness white */
+  --vp-c-text-2: #8892b0;        /* Dimmed Slate */
+  --vp-c-text-3: #4d5b7c;        /* Deep Slate */
+
+  --vp-c-border: #233554;        /* Subtle Blue Borders */
+  --vp-c-divider: #233554;
+  
+  --vp-button-brand-text: #0b1a2f;
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-code-block-bg: #060d16;
+}
+
+/* Dark Mode Grid Background (Overrides Body) */
+.dark body {
+  background-color: var(--vp-c-bg);
+  /* Cyan grid lines on dark blue paper */
+  background-image: 
+    linear-gradient(rgba(100, 255, 218, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 255, 218, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* ==============================================
+   6. CUSTOM CONTAINERS (Tips, Warnings, Danger)
+   ============================================== */
+
+/* ==============================================
+   6. CUSTOM CONTAINERS (Colored & Opaque)
+   ============================================== */
+
+/* --- Base Styles --- */
+.custom-block {
+  border-radius: 0px !important; /* Sharp corners */
+  border: 1px solid transparent; /* Border color defined below */
+  padding: 16px 24px;
+  margin: 24px 0;
+}
+
+/* --- LIGHT MODE (Solid Pale Colors) --- */
+
+/* TIP / INFO: Pale Blue Paper */
+.custom-block.tip, .custom-block.info {
+  background-color: #f0f9ff; 
+  border-color: var(--vp-c-brand);
+  color: #0c2d48;
+}
+.custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand-dark);
+}
+
+/* WARNING: Pale Amber Paper */
+.custom-block.warning {
+  background-color: #fffbeb; 
+  border-color: #f59e0b;
+  color: #451a03;
+}
+.custom-block.warning .custom-block-title {
+  color: #b45309;
+}
+
+/* DANGER: Pale Red Paper */
+.custom-block.danger {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+  color: #450a0a;
+}
+.custom-block.danger .custom-block-title {
+  color: #b91c1c;
+}
+
+/* --- DARK MODE (Solid Deep Colors) --- */
+
+/* TIP / INFO: Deep Cyan Ink */
+.dark .custom-block.tip, .dark .custom-block.info {
+  background-color: #0c2b36; /* Solid dark teal */
+  border-color: var(--vp-c-brand);
+  color: #e0f2fe;
+}
+.dark .custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand);
+}
+
+/* WARNING: Deep Amber Ink */
+.dark .custom-block.warning {
+  background-color: #2e2005; /* Solid dark amber */
+  border-color: #f59e0b;
+  color: #fef3c7;
+}
+.dark .custom-block.warning .custom-block-title {
+  color: #f59e0b;
+}
+
+/* DANGER: Deep Red Ink */
+.dark .custom-block.danger {
+  background-color: #2b0e0e; /* Solid dark red */
+  border-color: #ef4444;
+  color: #fee2e2;
+}
+.dark .custom-block.danger .custom-block-title {
+  color: #ef4444;
+}
+
+/* ==============================================
+   7. SIDEBAR TEXT CORRECTION
+   ============================================== */
+
+/* Keep Top-Level (Level 0) uppercase, but reset nested levels */
+.VPSidebarItem.level-1 .text,
+.VPSidebarItem.level-2 .text,
+.VPSidebarItem.level-3 .text,
+.VPSidebarItem.level-4 .text {
+  text-transform: none !important;
+  letter-spacing: 0px;
+  font-weight: 400; /* Optional: Makes nested text lighter/regular */
+}

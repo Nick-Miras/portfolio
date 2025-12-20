@@ -3,16 +3,9 @@
 layout: home
 
 hero:
-  name: "Nick's Portfolio"
-  text: "My Engineering Portfolio."
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  name: "Nick Miras"
+  text: "Engineering Student"
+  tagline: Applying math to simulate and control complex systems.
 
 features:
   - title: Feature A
