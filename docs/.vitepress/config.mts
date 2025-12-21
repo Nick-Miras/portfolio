@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About Me', link: '/root/who-am-i' },
-      { text: 'Portfolio', link: '/markdown-examples' } // TODO: Change Link
+      { text: 'Portfolio', link: '/portfolio/' } // TODO: Change Link
     ],
 
     sidebar: [
@@ -23,13 +23,11 @@ export default defineConfig({
       {
         text: 'Portfolio',
         items: [
-	  { text: 'Engineering', 
-		  items: [ 
-		    { text: 'Agila', link: '/engineering/dyson' }
-		  ]
-	  },
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Engineering', 
+            items: [ 
+              { text: 'Agila', link: '/engineering/dyson' }
+            ]
+          },
         ]
       }
     ],

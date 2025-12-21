@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Nick Miras"
   text: "Engineering Student"
-  tagline: Applying math to simulate and control complex systems.
+  tagline: Blogpost and Portfolio.
 
 features:
   - title: Feature A
