@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Nick's Portfolio",
+  title: "Nick's Website",
   description: "My Engineering Portfolio.",
   base: "/portfolio/",
   themeConfig: {
@@ -17,6 +17,7 @@ export default defineConfig({
       { text: 'About Me', items: [ 
         { text: 'About Me', link: '/root/who-am-i' },
         { text: 'Experience', link: '/root/experience' },
+        { text: 'Organizations', link: '/root/organizations' },
         { text: 'Competitions', link: '/root/competitions'},
         { text: 'Certifications', link: '/root/certifications'}
       ]},
@@ -35,5 +36,11 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Nick-Miras' }
     ]
+  },
+  markdown: {
+    image: {
+      // image lazy loading is disabled by default
+      lazyLoading: true
+    }
   }
 })
