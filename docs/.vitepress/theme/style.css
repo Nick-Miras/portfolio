@@ -85,34 +85,34 @@ body {
 }
 
 /* ==============================================
-   DARK MODE: Modern Monochrome
+   DARK MODE: Cyanotype Blueprint
    ============================================== */
 .dark {
-  --vp-c-bg: #1a1a1a;
-  --vp-c-bg-alt: #242424;
-  --vp-c-bg-soft: #2f2f2f;
+  --vp-c-bg: #0a1628;
+  --vp-c-bg-alt: #050d1a;
+  --vp-c-bg-soft: #0f1f3a;
 
-  --vp-c-brand: #ffffff;
-  --vp-c-brand-light: #e5e5e5;
-  --vp-c-brand-dark: #b3b3b3;
+  --vp-c-brand: #00d9ff;
+  --vp-c-brand-light: #4de8ff;
+  --vp-c-brand-dark: #00b8d9;
 
-  --vp-c-text-1: #f5f5f5;
-  --vp-c-text-2: #a3a3a3;
-  --vp-c-text-3: #737373;
+  --vp-c-text-1: #f0f9ff;
+  --vp-c-text-2: #a8c5e0;
+  --vp-c-text-3: #6b8db0;
 
-  --vp-c-border: #3a3a3a;
-  --vp-c-divider: #3a3a3a;
+  --vp-c-border: #1e3a5f;
+  --vp-c-divider: #1e3a5f;
 
-  --vp-button-brand-text: #1a1a1a;
+  --vp-button-brand-text: #0a1628;
   --vp-button-brand-bg: var(--vp-c-brand);
-  --vp-code-block-bg: #1a1a1a;
+  --vp-code-block-bg: #050d1a;
 }
 
 .dark body {
   background-color: var(--vp-c-bg);
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0, 217, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.08) 1px, transparent 1px);
   background-size: 80px 80px;
 }
 
@@ -161,9 +161,9 @@ body {
 /* Dark Mode */
 .dark .custom-block.tip,
 .dark .custom-block.info {
-  background-color: #2f2f2f;
+  background-color: #0a2330;
   border-color: var(--vp-c-brand);
-  color: #e5e5e5;
+  color: #b3e5ff;
 }
 
 .dark .custom-block.tip .custom-block-title {
@@ -171,23 +171,23 @@ body {
 }
 
 .dark .custom-block.warning {
-  background-color: #2f2f2f;
-  border-color: #b3b3b3;
-  color: #e5e5e5;
+  background-color: #2d1f0a;
+  border-color: #ffb84d;
+  color: #ffe5b3;
 }
 
 .dark .custom-block.warning .custom-block-title {
-  color: #b3b3b3;
+  color: #ffb84d;
 }
 
 .dark .custom-block.danger {
-  background-color: #2f2f2f;
-  border-color: #a3a3a3;
-  color: #e5e5e5;
+  background-color: #2d0f0f;
+  border-color: #ff6b6b;
+  color: #ffcccc;
 }
 
 .dark .custom-block.danger .custom-block-title {
-  color: #a3a3a3;
+  color: #ff6b6b;
 }
 
 /* ==============================================
