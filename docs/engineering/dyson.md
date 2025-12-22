@@ -2,7 +2,7 @@
 ## About this project
 The Philippine Eagle is a majestic bird of prey and the pride of the Philippines. Unfortunately, it’s critically endangered with only less than 400 pairs in the wild. One of the difficulties of monitoring this species is the trek through miles of thick and humid rainforest. Now, imagine doing this task remotely, where an array of devices can be stuck to trees, enabling researchers can pinpoint the location of these endangered birds through a web/mobile application.
 
-## Details
+## Design
 ##### Overview
 Collection of data is possible through microphones in the device; and directional information is not necessary as the intensity of the bird call is most important. The identification of the bird sound is done through machine learning. Furthermore, the communication between the devices to a central processing server/device shall be done with an RF or Satellite Module.
 

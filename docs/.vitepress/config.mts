@@ -26,7 +26,8 @@ export default defineConfig({
         items: [
           { text: 'Engineering', 
             items: [ 
-              { text: 'Agila', link: '/engineering/dyson' }
+              { text: 'Agila', link: '/engineering/dyson' },
+              { text: 'Table Top Wind Turbine', link: '/engineering/table_top_wind_turbine' }
             ]
           },
         ]

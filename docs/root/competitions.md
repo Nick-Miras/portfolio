@@ -3,6 +3,13 @@
 ## 2024
 
 ### Philippine Junior Data Science Challenge
+![Awarding](./media/awarding_team_bangan.png)
+Our team built a flood prediction model through a Random Forest Classifier, utilizing UMAP to transform the data for dimensionality reduction.
+Geospatial data was obtained from NASA, then preprocessed to obtain 1st and 2nd derivative features. This model was used to generate data for a jeepney rerouting algorithm.
+A Monte Carlo simulation was performed to compare existing path-finding algorithms with Metro Manila's OSM graph.
+
+##### Comprehensive Description
+Our entry was a comprehensive flood prediction and jeepney route rerouting system designed for Metro Manila, Philippines. The system integrates multiple data sources including the AEGIS flood dataset, NOAH flood hazard maps (5-year, 25-year, and 100-year return periods), NASA GPM precipitation data, and ECMWF weather forecasts to predict flooding events and dynamically reroute jeepney transportation networks. The core of the system employs machine learning models, specifically a Random Forest classifier combined with UMAP dimensionality reduction, to predict flood-prone areas based on spatial features such as latitude, longitude, precipitation levels, elevation data from digital elevation models (DEM), and historical flood hazard classifications. The transportation network is modeled using graph theory with NetworkX and OSMnx, representing jeepney routes as nodes and edges that can be disrupted when flooding is predicted. When nodes are identified as flooded through the prediction model, the system automatically calculates alternative routes by finding shortest paths between disconnected network segments, ensuring continuous transportation service even during adverse weather conditions. The project includes comprehensive data processing pipelines for precipitation data conversion, spatial interpolation techniques including kriging, Monte Carlo simulations for uncertainty quantification, and visualization tools for flood prediction maps and route analysis. The system is designed to operate in near-real-time, retrieving weather forecast data and generating updated route recommendations as conditions change, making it a practical tool for improving urban transportation resilience in flood-prone metropolitan areas.
 
 ## 2025
 
@@ -22,11 +29,12 @@ I skipped a lab class for this.
 
 ### Learniverse: The Ideathon
 ![Learniverse 1](./media/with-stellar-ph-founder.jpeg)
+![Lupa](./media/lupa.png)
 
+**Learniverse: The Ideathon** was a cebu-wide Ideathon joined by undergraduates from big universities in Cebu. Participants were only given 90 minutes to generate a solution to novel problems in the Philippines.
+Our team pitched 'Lupa'—a Strava-like mobile journaling application for plant lovers. Revenue was to be generated through an in-app marketplace with 80% donated to non-profits.
 
-### Dyson Award
-
-
+### James Dyson Award
 ![agila](./media/dyson.png)
 ##### Description
 
