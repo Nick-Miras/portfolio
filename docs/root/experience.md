@@ -10,6 +10,9 @@ Since March 2024, I have been working as a Research Consultant for various high 
 - Programmed microcontrollers (Arduino, NodeMCU, Wemos D1, A9G) to control actuators and process sensor data.
 - 1st Runner-Up Award: One client project placed in the Top 2 at a regional senior high school research competition.
 
+::: info
+More information can be found [here](../embedded/).
+:::
 
 ## Research Intern <Badge type="info" text="Embedded Systems" />
 **Company**: `CenGES (University of San Carlos)` | `August 2025 - Present`
@@ -18,3 +21,8 @@ CenGES (Center for Geoinformatics and Environmental Solutions) is a research cen
 
 - POSTe Project—an embedded systems project for automated and remote flood monitoring
 - Contributed in LoRa Integration, Sensor Data Integration, Automated Data Logging
+
+::: info Github Repositories
+- [POSTe](https://github.com/CenGes-Club/POSTe-N)
+- [IWRM](https://github.com/CenGes-Club/iwrm)
+:::

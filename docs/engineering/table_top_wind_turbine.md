@@ -14,4 +14,6 @@ The turbine's architecture is built on a modular assembly of 3D-printed parts an
 - Integrated Protection: A conical nose cone diverts airflow smoothly around the generator housing, reducing turbulence and drag.
 
 ### Plastic Mold Simulation <Badge type="danger" text="SOLIDWORKS" />
-TBA...
+::: danger Notice
+Under Construction.
+:::
