@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Nick's Website",
   description: "My Engineering Portfolio.",
-  base: "/portfolio/",
+  base: '/portfolio/', // TODO: Comment this out before deploying to aws.
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -14,15 +15,14 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'About Me', items: [ 
-        { text: 'About Me', link: '/root/who-am-i' },
+      { text: 'About Me', link: '/root/who-am-i', items: [ 
         { text: 'Experience', link: '/root/experience' },
         { text: 'Organizations', link: '/root/organizations' },
         { text: 'Competitions', link: '/root/competitions'},
         { text: 'Certifications', link: '/root/certifications'}
       ]},
       {
-        text: 'Portfolio',
+        text: 'Portfolio', link: '/portfolio/',
         items: [
           { text: 'Engineering', 
             items: [ 
@@ -43,5 +43,12 @@ export default defineConfig({
       // image lazy loading is disabled by default
       lazyLoading: true
     }
+  },
+  vite: {
+    plugins: [ViteImageOptimizer({
+        jpg: { quality: 80 },
+        png: { quality: 50 },
+        webp: { quality: 75 },
+      })]
   }
 })

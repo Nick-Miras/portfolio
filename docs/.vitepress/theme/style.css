@@ -24,16 +24,77 @@
 
 .VPHero .name,
 .VPHero .text,
-.VPHero .tagline,
-.VPHero .actions {
+.VPHero .tagline {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ==============================================
+   ACTION BUTTONS
+   ============================================== */
+.VPHero .actions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1px !important;
+  margin-top: 32px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  flex-wrap: wrap;
+}
+
+.VPHero .actions .VPButton {
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  min-width: 180px !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPHero .actions .VPButton:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Dark Mode Action Buttons */
+.dark .VPHero .actions .VPButton[class*="brand"],
+.dark .VPHero .actions .VPButton.brand {
+  background-color: #00d9ff !important;
+  color: #0a1628 !important;
+  border-color: #00d9ff !important;
+}
+
+.dark .VPHero .actions .VPButton[class*="brand"]:hover,
+.dark .VPHero .actions .VPButton.brand:hover {
+  background-color: #4de8ff !important;
+  border-color: #4de8ff !important;
+  box-shadow: 0 4px 16px rgba(0, 217, 255, 0.4) !important;
+}
+
+.dark .VPHero .actions .VPButton[class*="alt"],
+.dark .VPHero .actions .VPButton.alt {
+  background-color: transparent !important;
+  color: #00d9ff !important;
+  border-color: #00d9ff !important;
+  border-width: 2px !important;
+}
+
+.dark .VPHero .actions .VPButton[class*="alt"]:hover,
+.dark .VPHero .actions .VPButton.alt:hover {
+  background-color: rgba(0, 217, 255, 0.1) !important;
+  border-color: #4de8ff !important;
+  color: #4de8ff !important;
+  box-shadow: 0 4px 16px rgba(0, 217, 255, 0.3) !important;
 }
 
 /* ==============================================
    GLOBAL ARCHITECTURE
    ============================================== */
 :root {
+  /* Base Font Size */
+  font-size: 18px;
+
   /* Sharp "CAD" Edges */
   --vp-button-alt-border-radius: 0px;
   --vp-button-brand-border-radius: 0px;
@@ -77,11 +138,13 @@ h1 {
    LIGHT MODE: Engineering Graph Paper
    ============================================== */
 body {
+  font-size: 18px;
   background-color: var(--vp-c-bg);
   background-image:
     linear-gradient(rgba(0, 82, 204, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 82, 204, 0.05) 1px, transparent 1px);
   background-size: 80px 80px;
+  background-position: center center;
 }
 
 /* ==============================================
@@ -114,6 +177,7 @@ body {
     linear-gradient(rgba(0, 217, 255, 0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 217, 255, 0.08) 1px, transparent 1px);
   background-size: 80px 80px;
+  background-position: center center;
 }
 
 /* ==============================================
